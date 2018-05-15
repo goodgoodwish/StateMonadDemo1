@@ -2,7 +2,7 @@
 
 You may follow this pattern.
 
-```
+```scala
   def stackManipulation: State[Stack, Int] = for {
     _ <- push(3)
     a <- pop
