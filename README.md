@@ -1,3 +1,9 @@
+## A concise demo for State Monad.
+
+You may follow this pattern.
+
+## upload code to github
+
 ```
 echo "# StateMonadDemo1" >> README.md
 git init
