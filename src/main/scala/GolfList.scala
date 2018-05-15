@@ -17,7 +17,7 @@ object GolfList extends App {
     (Stack(s.myList.tail), s.myList.head)
   }
 
-  def stackManip: State[Stack, Int] = for {
+  def stackManipulation: State[Stack, Int] = for {
     _ <- push(3)
     a <- pop
     b <- pop
@@ -27,7 +27,7 @@ object GolfList extends App {
 
   val beginningState = Stack(List(2, 5, 8))
 
-  val result: (Stack, Int) = stackManip.run(beginningState)
+  val result: (Stack, Int) = stackManipulation.run(beginningState)
 
   println(s"Stack state: ${result._1}")  //Stack(List(5, 8))
   println(s"my Value: ${result._2}") // 2

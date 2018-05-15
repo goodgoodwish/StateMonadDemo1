@@ -2,6 +2,14 @@
 
 You may follow this pattern.
 
+```
+  def stackManipulation: State[Stack, Int] = for {
+    _ <- push(3)
+    a <- pop
+    b <- pop
+  } yield(b) 
+```
+
 ## upload code to github
 
 ```
