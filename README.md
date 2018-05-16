@@ -20,4 +20,11 @@ git commit -m "first commit"
 git remote add origin https://github.com/goodgoodwish/StateMonadDemo1.git
 git push -u origin master
 
+
+# More code changes, and push.
+
+git add .
+git commit -m "first commit"
+git push -u origin master
+
 ```

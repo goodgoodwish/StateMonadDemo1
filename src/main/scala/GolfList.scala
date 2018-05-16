@@ -13,7 +13,7 @@ object GolfList extends App {
 
   // State[S, A]
   def pop: State[Stack, Int] = State {(s:Stack) =>
-    println("After pop, ", s)
+    println("Before pop, ", s)
     (Stack(s.myList.tail), s.myList.head)
   }
 
@@ -36,8 +36,8 @@ object GolfList extends App {
 [info] Running state_monad_for_listStack.GolfList
 
 (After push, ,(Stack(List(3, 2, 5, 8)),3))
-(After pop, ,Stack(List(3, 2, 5, 8)))
-(After pop, ,Stack(List(2, 5, 8)))
+(Before pop, ,Stack(List(3, 2, 5, 8)))
+(Before pop, ,Stack(List(2, 5, 8)))
 Stack state: Stack(List(5, 8))
 my Value: 2
 */
